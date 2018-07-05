@@ -11,8 +11,6 @@ datagroup: do_not_mess_with_lookml_default_datagroup {
   max_cache_age: "1 hour"
 }
 
-persist_with: do_not_mess_with_lookml_default_datagroup
-
 explore: events {
   join: users {
     type: left_outer
