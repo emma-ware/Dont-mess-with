@@ -3,8 +3,6 @@ connection: "thelook"
 # include all the views
 include: "*.view"
 
-# include all the dashboards
-include: "*.dashboard"
 
 datagroup: do_not_mess_with_lookml_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -73,6 +71,8 @@ explore: user_data {
   }
 }
 
-explore: users {}
+explore: users {
+  extension: required
+}
 
 explore: users_nn {}
